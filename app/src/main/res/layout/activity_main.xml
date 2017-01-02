@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.putilive.Main_Activity">
+
+    <include layout="@layout/top" />
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tablayout_main"
+        app:tl_indicator_color="#dc403a"
+        app:tl_underline_color="#dc403a"
+        app:tl_textUnselectColor = "#666666"
+        app:tl_indicator_width = "30dp"
+        app:tl_tab_space_equal ="true"
+        app:tl_textSelectColor ="#666666"
+        app:tl_textsize = "16sp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
